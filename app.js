@@ -1,2 +1,1 @@
-let hello = 12
-let string = 'hello{hello}
+import { SpeedInsights } from "@vercel/speed-insights/next"
