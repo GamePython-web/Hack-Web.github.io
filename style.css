@@ -7,11 +7,11 @@
   }
 }
 .gradient {
-  --size: 250px;
+  --size: 400px;
   --speed: 50s;
   --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
-  width: var(--size);
-  height: var(--size);
+  width: 400px;
+  height: 400px;
   filter: blur(calc(var(--size) / 5));
   background-image: linear-gradient(rgba(55, 235, 169, 0.85), #5b37eb);
   animation: rotate var(--speed) var(--easing) alternate infinite;
@@ -48,8 +48,8 @@ body {
   width: 400px;
   max-width: 400px;
   max-height: 600px;
-  min-width: 200px;
-  min-height: 300px;
+  min-width: 100px;
+  min-height: 200px;
   position: absolute;
   border-radius: 10px;
   padding: 40px;
@@ -77,17 +77,15 @@ body {
   border-top: none;
   border-left: none;
   border-right:none ;
-  border-bottom: solid 3px rgba(255, 255, 255, 0.479);
-  background: rgba(255,255,255,0.35);
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
+  border-bottom: solid 1.5px rgb(255, 255, 255);
+  background:transparent;
   box-shadow: none;
-  font-size: 15px;
+  font-size: 16px;
   color:rgb(0, 0, 0) ;
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: 'Trykker', serif;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   padding-left:10px;
 
 }
@@ -310,13 +308,14 @@ body {
   border: 1px solid rgb(255, 255, 255);
   cursor: pointer;
   position: relative;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(242, 242, 242, 0);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   top:30px;
   font-size: 20px;
   border-radius: 10px;
+  color:white;
   font-family: 'Aldrich', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -342,4 +341,15 @@ body {
   .button-52 {
     padding: 13px 40px 13px;
   }
+}
+
+@media (min-width:320px){
+   .login{
+      width: 350px;
+      height: 500px;
+   }
+   .gradient{
+      width:400px;
+      height: 600px;
+   }
 }
